@@ -4,50 +4,66 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Apply for Cohort 1 | Resource Ramp</title>
-<meta name="description" content="Apply to Resource Ramp's first 12-month incubation cohort in Chembur, Mumbai. Thirteen spots, starting Q1 2027. The application takes about fifteen minutes and is reviewed every week.">
+<meta name="description" content="Apply to Resource Ramp's first 12-month incubation cohort in Mumbai. Thirteen spots, starting Q1 2027. The application takes about fifteen minutes and is reviewed every week.">
 <link rel="canonical" href="https://resourceramp.co/apply">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Resource Ramp">
 <meta property="og:title" content="Apply for Cohort 1 | Resource Ramp">
-<meta property="og:description" content="Apply to Resource Ramp's first 12-month incubation cohort in Chembur, Mumbai. Thirteen spots, starting Q1 2027. The application takes about fifteen minutes and is reviewed every week.">
+<meta property="og:description" content="Apply to Resource Ramp's first 12-month incubation cohort in Mumbai. Thirteen spots, starting Q1 2027. The application takes about fifteen minutes and is reviewed every week.">
 <meta property="og:url" content="https://resourceramp.co/apply">
 <meta property="og:image" content="https://resourceramp.co/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/img/icon-512.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="/styles.css">
+<link rel="preload" href="/fonts/inter-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css?v=20261117">
 
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
 <header class="nav" id="top">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Resource Ramp home"><img src="/img/logo.png" alt="Resource Ramp" width="194" height="30"></a>
     <nav aria-label="Main">
       <ul class="nav-links" id="menu">
-        <li><a href="/#programme" >Programme</a></li>
-        <li><a href="/#hub" >The hub</a></li>
-        <li><a href="/partners" >Corporates &amp; investors</a></li>
-        <li><a href="/apply" aria-current="page">Apply</a></li>
-        <li><a href="/#contact" >Contact</a></li>
+        <li><a href="/founders">For founders</a></li>
+        <li><a href="/investors">For investors</a></li>
+        <li><a href="/corporates">For corporates</a></li>
+        <li><a href="/hub">The hub</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About</a></li>
+        <li class="nav-apply"><a href="/apply" aria-current="page">Apply for Cohort 1</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-primary" href="/apply">Apply for Cohort 1</a>
+      <a class="btn btn-primary btn-sm" href="/apply">Apply for Cohort 1</a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span></button>
     </div>
   </div>
 </header>
-<main>
+<main id="main">
   <section class="page-head">
     <div class="wrap">
       <span class="redline"></span>
       <h1>Apply for Cohort 1.</h1>
       <p>Thirteen spots, starting Q1 2027. The form takes about fifteen minutes. Applications are reviewed every week and founders hear back within seven working days.</p>
+    </div>
+  </section>
+
+  <section class="section-tight alt" aria-labelledby="journey-title">
+    <div class="wrap">
+      <h2 id="journey-title" class="sub" style="margin-bottom:28px">What happens after the form is sent.</h2>
+      <ol class="journey reveal" aria-label="The application journey, in five steps">
+        <li style="--i:0"><h3>Apply</h3><p>Fill in the form or send the same four points by email. It takes about fifteen minutes.</p><span class="when">About 15 minutes</span></li>
+        <li style="--i:1"><h3>Review</h3><p>The programme team reads applications every week and writes back to every founder.</p><span class="when">Reply within 7 working days</span></li>
+        <li style="--i:2"><h3>Selection</h3><p>With the founders' consent, the application goes to programme mentors and the investor panel. Thirteen teams are chosen.</p><span class="when">13 spots a cohort</span></li>
+        <li style="--i:3"><h3>Onboarding</h3><p>Each team reads and signs a written incubation agreement that sets out the terms, then takes its seats.</p><span class="when">Terms in writing first</span></li>
+        <li style="--i:4"><h3>Incubation</h3><p>Twelve months at the Mumbai hub: Founder Fridays, monthly mentor one-on-ones and a demo day every quarter.</p><span class="when">Cohort 1 starts Q1 2027</span></li>
+      </ol>
     </div>
   </section>
 
@@ -66,8 +82,17 @@
       </aside>
 
       <div>
-        <div class="sent" id="sent" hidden>
-          <strong>Application received.</strong> Thank you. The programme team reads applications every week and replies within seven working days from <a href="mailto:ramp@resource.bz">ramp@resource.bz</a>. If nothing arrives, check the spam folder before writing again.
+        <div class="form-status ok" id="sent" role="status" tabindex="-1" hidden>
+          <h2>Application received.</h2>
+          <p>Thank you. The programme team reads applications every week and replies within seven working days from <a href="mailto:ramp@resource.bz">ramp@resource.bz</a>. If nothing arrives, check the spam folder before writing again.</p>
+        </div>
+        <div class="form-status fail" id="failed" role="alert" tabindex="-1" hidden>
+          <h2>The application did not go through.</h2>
+          <p>Nothing has been lost. The answers are still in the form below. Try sending again, or send the same answers by email and they will land on the same desk.</p>
+          <div class="actions">
+            <a class="btn btn-primary" id="mail-fallback" href="mailto:ramp@resource.bz?subject=Cohort%201%20application">Send by email instead</a>
+            <button class="btn btn-ghost" id="copy-fallback" type="button">Copy the answers</button>
+          </div>
         </div>
         <form class="apply" action="https://formsubmit.co/govind@globalwonders.co" method="POST" novalidate>
           <input type="hidden" name="_subject" value="Cohort 1 application - resourceramp.co">
@@ -178,7 +203,7 @@
               <span class="error">Say what the team needs.</span>
             </div>
             <div class="field">
-              <label for="hub">Can the team work from the hub in Chembur, full-time?</label>
+              <label for="hub">Can the team work from the Mumbai hub, full-time?</label>
               <select id="hub" name="Work from hub" required>
                 <option value="">Choose one</option>
                 <option>Yes, the whole team</option>
@@ -204,7 +229,7 @@
 
           <div class="form-foot">
             <button class="btn btn-primary" type="submit">Send the application</button>
-            <small>Reviewed weekly. Reply within seven working days.</small>
+            <small id="form-note">Reviewed weekly. Reply within seven working days.</small>
           </div>
         </form>
       </div>
@@ -215,28 +240,41 @@
 <footer class="footer">
   <div class="wrap">
     <div class="footer-top">
-      <div>
+      <div class="footer-brand">
         <img src="/img/logo-white.png" alt="Resource Ramp" width="181" height="28">
         <p class="tag">LAUNCH &middot; GROW &middot; THRIVE</p>
-        <p style="margin-top:16px;max-width:38ch;color:#9CA3AF">A startup incubation centre in Chembur, Mumbai, and an initiative of Resource Workspaces.</p>
+        <p class="footer-desc">A startup incubation centre in Mumbai, and an initiative of Resource Workspaces.</p>
         <p class="footer-group"><span>Group companies</span><a href="https://www.resource.bz/" rel="noopener" target="_blank"><img src="/img/resource-wordmark.png" alt="Resource" height="14"></a><a href="https://www.resourcespaces.com/" rel="noopener" target="_blank"><img src="/img/resource-workspaces.png" alt="Resource Workspaces" height="30"></a><a class="logo-tile" href="https://www.sabari.co/" rel="noopener" target="_blank"><img src="/img/sabari-group.png" alt="Sabari Group, Building Realties since 1990" height="30"></a></p>
       </div>
       <div>
-        <h3 class="fh">Resource Ramp</h3>
+        <h2 class="fh">Programme</h2>
         <ul>
-          <li><a href="/#programme">The programme</a></li>
-          <li><a href="/#hub">The hub</a></li>
-          <li><a href="/partners">Corporates and investors</a></li>
+          <li><a href="/founders">For founders</a></li>
+          <li><a href="/founders#journey">How to apply</a></li>
+          <li><a href="/#faq">Questions and answers</a></li>
           <li><a href="/apply">Apply for Cohort 1</a></li>
-          <li><a href="https://www.linkedin.com/company/resourceramp/" rel="noopener" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="fh">Contact</h3>
+        <h2 class="fh">Resource Ramp</h2>
+        <ul>
+          <li><a href="/investors">For investors</a></li>
+          <li><a href="/corporates">For corporates</a></li>
+          <li><a href="/hub">The hub</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="fh">Contact</h2>
         <address>
           <a href="mailto:ramp@resource.bz">ramp@resource.bz</a><br>
           101-103, Ujagar Chambers,<br>7 V. N. Purav Marg, Deonar,<br>Mumbai 400088, India
         </address>
+        <ul class="footer-ext">
+          <li><a href="https://maps.app.goo.gl/9EXsXJCVToM4Vr5s8" rel="noopener" target="_blank">Open in Google Maps</a></li>
+          <li><a href="https://www.linkedin.com/company/resourceramp/" rel="noopener" target="_blank">LinkedIn</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-legal">
@@ -245,6 +283,18 @@
     </div>
   </div>
 </footer>
-<script src="/main.js" defer></script>
+<dialog class="lightbox" id="lightbox" aria-label="Photograph">
+  <button class="lb-close" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Previous photograph">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <figure><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><figcaption></figcaption></figure>
+  <button class="lb-nav lb-next" type="button" aria-label="Next photograph">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+</dialog>
+<script src="/main.js?v=20261117" defer></script>
 </body>
 </html>

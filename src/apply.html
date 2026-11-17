@@ -1,14 +1,21 @@
 ---
 title: Apply for Cohort 1 | Resource Ramp
-description: Apply to Resource Ramp's first 12-month incubation cohort in Chembur, Mumbai. Thirteen spots, starting Q1 2027. The application takes about fifteen minutes and is reviewed every week.
+description: Apply to Resource Ramp's first 12-month incubation cohort in Mumbai. Thirteen spots, starting Q1 2027. The application takes about fifteen minutes and is reviewed every week.
 active: apply
 ---
-<main>
+<main id="main">
   <section class="page-head">
     <div class="wrap">
       <span class="redline"></span>
       <h1>Apply for Cohort 1.</h1>
       <p>Thirteen spots, starting Q1 2027. The form takes about fifteen minutes. Applications are reviewed every week and founders hear back within seven working days.</p>
+    </div>
+  </section>
+
+  <section class="section-tight alt" aria-labelledby="journey-title">
+    <div class="wrap">
+      <h2 id="journey-title" class="sub" style="margin-bottom:28px">What happens after the form is sent.</h2>
+{{> journey}}
     </div>
   </section>
 
@@ -27,8 +34,17 @@ active: apply
       </aside>
 
       <div>
-        <div class="sent" id="sent" hidden>
-          <strong>Application received.</strong> Thank you. The programme team reads applications every week and replies within seven working days from <a href="mailto:ramp@resource.bz">ramp@resource.bz</a>. If nothing arrives, check the spam folder before writing again.
+        <div class="form-status ok" id="sent" role="status" tabindex="-1" hidden>
+          <h2>Application received.</h2>
+          <p>Thank you. The programme team reads applications every week and replies within seven working days from <a href="mailto:ramp@resource.bz">ramp@resource.bz</a>. If nothing arrives, check the spam folder before writing again.</p>
+        </div>
+        <div class="form-status fail" id="failed" role="alert" tabindex="-1" hidden>
+          <h2>The application did not go through.</h2>
+          <p>Nothing has been lost. The answers are still in the form below. Try sending again, or send the same answers by email and they will land on the same desk.</p>
+          <div class="actions">
+            <a class="btn btn-primary" id="mail-fallback" href="mailto:ramp@resource.bz?subject=Cohort%201%20application">Send by email instead</a>
+            <button class="btn btn-ghost" id="copy-fallback" type="button">Copy the answers</button>
+          </div>
         </div>
         <form class="apply" action="https://formsubmit.co/govind@globalwonders.co" method="POST" novalidate>
           <input type="hidden" name="_subject" value="Cohort 1 application - resourceramp.co">
@@ -139,7 +155,7 @@ active: apply
               <span class="error">Say what the team needs.</span>
             </div>
             <div class="field">
-              <label for="hub">Can the team work from the hub in Chembur, full-time?</label>
+              <label for="hub">Can the team work from the Mumbai hub, full-time?</label>
               <select id="hub" name="Work from hub" required>
                 <option value="">Choose one</option>
                 <option>Yes, the whole team</option>
@@ -165,7 +181,7 @@ active: apply
 
           <div class="form-foot">
             <button class="btn btn-primary" type="submit">Send the application</button>
-            <small>Reviewed weekly. Reply within seven working days.</small>
+            <small id="form-note">Reviewed weekly. Reply within seven working days.</small>
           </div>
         </form>
       </div>

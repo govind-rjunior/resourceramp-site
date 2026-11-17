@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://resourceramp.co/</loc><lastmod>2026-09-11</lastmod></url>
-  <url><loc>https://resourceramp.co/partners</loc><lastmod>2026-09-11</lastmod></url>
-  <url><loc>https://resourceramp.co/apply</loc><lastmod>2026-09-11</lastmod></url>
-  <url><loc>https://resourceramp.co/privacy-policy</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://resourceramp.co/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://resourceramp.co/founders</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://resourceramp.co/investors</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://resourceramp.co/corporates</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://resourceramp.co/hub</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://resourceramp.co/events</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://resourceramp.co/about</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://resourceramp.co/apply</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://resourceramp.co/privacy-policy</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://resourceramp.co/terms-of-use</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://resourceramp.co/disclaimer</loc><lastmod>2026-09-11</lastmod></url>
 </urlset>
