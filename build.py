@@ -12,7 +12,7 @@ ROOT = pathlib.Path(__file__).parent
 SRC = ROOT / "src"
 PARTIALS = SRC / "partials"
 SITE = "https://resourceramp.co"
-ASSET_VERSION = "20261117b"
+ASSET_VERSION = "20261117c"
 
 NAV_ITEMS = [
     ("founders", "/founders", "For founders"),

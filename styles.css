@@ -571,6 +571,7 @@ form.apply legend { font-weight: 700; color: var(--ink); font-size: 1.14rem; pad
 .form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
 .form-foot small { color: var(--faint); }
 .form-status { border-radius: var(--radius-l); padding: 22px 24px; }
+.form-status:focus { outline: none; }
 .form-status h2 { font-size: 1.3rem; letter-spacing: -0.015em; }
 .form-status p { margin-top: 8px; }
 .form-status.ok { border: 1px solid var(--ink); background: var(--ground-2); color: var(--body); }
