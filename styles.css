@@ -407,6 +407,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 860px) {
   .about { grid-template-columns: 1fr; }
   .about-photo { position: static; order: -1; }
+  .about-reel { position: static; order: -1; }
   .interests { grid-template-columns: 1fr 1fr; }
   .interests li:nth-child(3) { border-left: 0; padding-left: 0; }
   .interests li:nth-child(n+3) { border-top: 1px solid var(--line); }
@@ -531,6 +532,9 @@ p:last-child { margin-bottom: 0; }
 .reel figcaption b { display: block; color: var(--ink); font-weight: 700; font-size: 1.06rem; letter-spacing: -0.01em; }
 .reel figcaption span { display: block; margin-top: 4px; color: var(--muted); font-size: 0.96rem; }
 .reel figcaption a { display: inline-block; margin-top: 8px; font-size: 0.92rem; font-weight: 600; color: var(--ink); }
+.split-head .reel { margin-top: 30px; max-width: 460px; }
+.about-reel { position: sticky; top: calc(var(--nav-h) + 24px); }
+.about-reel .reel-frame { box-shadow: var(--shadow); }
 .band-ink .reel figcaption b { color: #fff; }
 .band-ink .reel figcaption span { color: var(--on-ink); }
 .band-ink .reel figcaption a { color: #fff; }
